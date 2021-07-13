@@ -14,7 +14,6 @@
 		38E23F432591B75200EBE21D /* WebPSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E23F402591B75200EBE21D /* WebPSerializer.swift */; };
 		38E23F442591B75200EBE21D /* WebPProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E23F412591B75200EBE21D /* WebPProcessor.swift */; };
 		38E23F452591B75200EBE21D /* Image+WebP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E23F422591B75200EBE21D /* Image+WebP.swift */; };
-		38E23F752591BBB000EBE21D /* libwebp in Frameworks */ = {isa = PBXBuildFile; productRef = 38E23F742591BBB000EBE21D /* libwebp */; };
 		38E23FB02591C39C00EBE21D /* cover.webp in Resources */ = {isa = PBXBuildFile; fileRef = 38E23FA82591C39C00EBE21D /* cover.webp */; };
 		38E23FB12591C39C00EBE21D /* kingfisher.webp in Resources */ = {isa = PBXBuildFile; fileRef = 38E23FA92591C39C00EBE21D /* kingfisher.webp */; };
 		38E23FB22591C39C00EBE21D /* logo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 38E23FAA2591C39C00EBE21D /* logo.webp */; };
@@ -23,6 +22,11 @@
 		38E23FB52591C39C00EBE21D /* animation.webp in Resources */ = {isa = PBXBuildFile; fileRef = 38E23FAD2591C39C00EBE21D /* animation.webp */; };
 		38E23FB62591C39C00EBE21D /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E23FAE2591C39C00EBE21D /* cover.png */; };
 		38E23FB72591C39C00EBE21D /* animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 38E23FAF2591C39C00EBE21D /* animation.gif */; };
+		40423209269D3A9C00DB63D7 /* WebPMux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40423204269D3A9C00DB63D7 /* WebPMux.framework */; };
+		4042320A269D3A9C00DB63D7 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40423205269D3A9C00DB63D7 /* WebP.framework */; };
+		4042320B269D3A9C00DB63D7 /* WebPDecoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40423206269D3A9C00DB63D7 /* WebPDecoder.framework */; };
+		4042320C269D3A9C00DB63D7 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 40423207269D3A9C00DB63D7 /* README */; };
+		4042320D269D3A9C00DB63D7 /* WebPDemux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40423208269D3A9C00DB63D7 /* WebPDemux.framework */; };
 		FEAA17F3264BF9CA00B1C2E7 /* CGImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAA17F0264BF9CA00B1C2E7 /* CGImage+WebP.m */; };
 		FEAA17F4264BF9CA00B1C2E7 /* CGImage+WebP.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAA17F2264BF9CA00B1C2E7 /* CGImage+WebP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -55,6 +59,11 @@
 		38E23FAD2591C39C00EBE21D /* animation.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = animation.webp; sourceTree = "<group>"; };
 		38E23FAE2591C39C00EBE21D /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
 		38E23FAF2591C39C00EBE21D /* animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animation.gif; sourceTree = "<group>"; };
+		40423204269D3A9C00DB63D7 /* WebPMux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebPMux.framework; sourceTree = "<group>"; };
+		40423205269D3A9C00DB63D7 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		40423206269D3A9C00DB63D7 /* WebPDecoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebPDecoder.framework; sourceTree = "<group>"; };
+		40423207269D3A9C00DB63D7 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		40423208269D3A9C00DB63D7 /* WebPDemux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebPDemux.framework; sourceTree = "<group>"; };
 		FEAA17F0264BF9CA00B1C2E7 /* CGImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGImage+WebP.m"; sourceTree = "<group>"; };
 		FEAA17F2264BF9CA00B1C2E7 /* CGImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGImage+WebP.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,8 +73,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38E23F752591BBB000EBE21D /* libwebp in Frameworks */,
+				4042320A269D3A9C00DB63D7 /* WebP.framework in Frameworks */,
+				4042320D269D3A9C00DB63D7 /* WebPDemux.framework in Frameworks */,
+				4042320B269D3A9C00DB63D7 /* WebPDecoder.framework in Frameworks */,
 				38E23F3D2591B70300EBE21D /* Kingfisher in Frameworks */,
+				40423209269D3A9C00DB63D7 /* WebPMux.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,7 @@
 		38E23F152591B68900EBE21D = {
 			isa = PBXGroup;
 			children = (
+				40423203269D3A9C00DB63D7 /* libwebp */,
 				38E23F212591B68900EBE21D /* Sources */,
 				38E23F2C2591B68900EBE21D /* Tests */,
 				38E23F202591B68900EBE21D /* Products */,
@@ -136,6 +149,18 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		40423203269D3A9C00DB63D7 /* libwebp */ = {
+			isa = PBXGroup;
+			children = (
+				40423204269D3A9C00DB63D7 /* WebPMux.framework */,
+				40423205269D3A9C00DB63D7 /* WebP.framework */,
+				40423206269D3A9C00DB63D7 /* WebPDecoder.framework */,
+				40423207269D3A9C00DB63D7 /* README */,
+				40423208269D3A9C00DB63D7 /* WebPDemux.framework */,
+			);
+			path = libwebp;
+			sourceTree = "<group>";
+		};
 		FEAA17EF264BF9CA00B1C2E7 /* KingfisherWebP-ObjC */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +209,6 @@
 			name = KingfisherWebP;
 			packageProductDependencies = (
 				38E23F3C2591B70300EBE21D /* Kingfisher */,
-				38E23F742591BBB000EBE21D /* libwebp */,
 			);
 			productName = KingfisherWebP;
 			productReference = 38E23F1F2591B68900EBE21D /* KingfisherWebP.framework */;
@@ -237,7 +261,6 @@
 			mainGroup = 38E23F152591B68900EBE21D;
 			packageReferences = (
 				38E23F3B2591B70300EBE21D /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				38E23F732591BBB000EBE21D /* XCRemoteSwiftPackageReference "libwebp-Xcode" */,
 			);
 			productRefGroup = 38E23F202591B68900EBE21D /* Products */;
 			projectDirPath = "";
@@ -254,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4042320C269D3A9C00DB63D7 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +468,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libwebp",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -469,6 +497,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libwebp",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -561,14 +593,6 @@
 				minimumVersion = 6.1.0;
 			};
 		};
-		38E23F732591BBB000EBE21D /* XCRemoteSwiftPackageReference "libwebp-Xcode" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/libwebp-Xcode";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -576,11 +600,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 38E23F3B2591B70300EBE21D /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		38E23F742591BBB000EBE21D /* libwebp */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 38E23F732591BBB000EBE21D /* XCRemoteSwiftPackageReference "libwebp-Xcode" */;
-			productName = libwebp;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

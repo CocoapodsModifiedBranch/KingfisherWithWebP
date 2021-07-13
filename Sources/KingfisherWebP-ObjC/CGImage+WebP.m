@@ -21,6 +21,11 @@
 #import <libwebp/encode.h>
 #import <libwebp/demux.h>
 #import <libwebp/mux.h>
+#elif __has_include(<Webp/decode.h>) && __has_include(<Webp/encode.h>) && __has_include(<WebpDemux/demux.h>) && __has_include(<WebpMux/mux.h>)
+#import <Webp/decode.h>
+#import <Webp/encode.h>
+#import <WebpDemux/demux.h>
+#import <WebpMux/mux.h>
 #else
 @import libwebp;
 #endif
